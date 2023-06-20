@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage 
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:CashFlow.Views"
+            x:Class="CashFlow.Views.MainMenu"
+            android:TabbedPage.ToolbarPlacement="Bottom"
+            BarBackgroundColor="AliceBlue"
+            SelectedTabColor="{StaticResource SecondaryColor}"
+    UnselectedTabColor="Gray"
+            >
+    <TabbedPage.Children>
+        <!-- Primera página -->
+        <local:HomePage Title="inicio" >
+            <local:HomePage.IconImageSource>
+                <FontImageSource FontFamily="Icons"
+                                 Glyph="{StaticResource IconHome}"
+                                 Color="Black" />
+            </local:HomePage.IconImageSource>
+        </local:HomePage>
+
+        <!-- transferir página -->
+        <local:TranferPage Title="Transferir">
+            <local:TranferPage.IconImageSource>
+                <FontImageSource FontFamily="Icons"
+                                 Glyph="{StaticResource IconBankTransferOut}"
+                                 Color="Black" />
+            </local:TranferPage.IconImageSource>
+        </local:TranferPage>
+
+        <!-- perfil página -->
+        <local:ProfilePage Title="Perfil">
+            <local:ProfilePage.IconImageSource>
+                <FontImageSource FontFamily="Icons"
+                                 Glyph="{StaticResource IconAccount}"
+                                 Color="Black" />
+            </local:ProfilePage.IconImageSource>
+        </local:ProfilePage>
+
+    </TabbedPage.Children>
+</TabbedPage>

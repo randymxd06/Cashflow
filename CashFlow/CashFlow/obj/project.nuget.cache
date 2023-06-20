@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "WBHPQuFWYmAWto8tVwuOKbUaw/CUehahM1ntyV9f/9yjk7y/UKUlgBBYu/Bf3G9joVKBbl0LHv0Ngqu/3f2PNA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\randymxd06\\OneDrive\\Escritorio\\CashFlow\\CashFlow\\CashFlow\\CashFlow.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\randymxd06\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\randymxd06\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\randymxd06\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\randymxd06\\.nuget\\packages\\xamarin.essentials\\1.7.5\\xamarin.essentials.1.7.5.nupkg.sha512",
+    "C:\\Users\\randymxd06\\.nuget\\packages\\xamarin.forms\\5.0.0.2578\\xamarin.forms.5.0.0.2578.nupkg.sha512",
+    "C:\\Users\\randymxd06\\.nuget\\packages\\xamarin.forms.visual.material\\5.0.0.2578\\xamarin.forms.visual.material.5.0.0.2578.nupkg.sha512"
+  ],
+  "logs": []
+}

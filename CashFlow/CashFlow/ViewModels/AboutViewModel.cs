@@ -11,12 +11,14 @@ namespace CashFlow.ViewModels
     public class AboutViewModel : BaseViewModel
     {
         public Command LoginCommand { get; }
+        public Command NewAccountCommand { get; }
         private INavigation Navigation { get; set; }
         public AboutViewModel()
         {
 
             OpenWebCommand = new Command(async () => await Browser.OpenAsync("https://aka.ms/xamarin-quickstart"));
             LoginCommand = new Command(OnLoginClicked);
+            NewAccountCommand = new Command(OnNewAccountBtnClicked);
         }
 
         public ICommand OpenWebCommand { get; }
@@ -31,6 +33,12 @@ namespace CashFlow.ViewModels
 
             await Application.Current.MainPage.Navigation.PushAsync(new MainMenu());
         }
-        
+        private async void OnNewAccountBtnClicked(object obj)
+        {
+            Debug.Write("New Account");
+
+            await Application.Current.MainPage.Navigation.PushAsync(new NewAccountPage());
+        }
+
     }
 }

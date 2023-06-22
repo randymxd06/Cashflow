@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\randymxd06\\OneDrive\\Escritorio\\CashFlow\\CashFlow\\CashFlow\\CashFlow.csproj": {}
+    "C:\\Users\\vjt25\\Desktop\\universidad\\dispositivos moviles\\git\\CashFlow\\CashFlow\\CashFlow\\CashFlow.csproj": {}
   },
   "projects": {
-    "C:\\Users\\randymxd06\\OneDrive\\Escritorio\\CashFlow\\CashFlow\\CashFlow\\CashFlow.csproj": {
+    "C:\\Users\\vjt25\\Desktop\\universidad\\dispositivos moviles\\git\\CashFlow\\CashFlow\\CashFlow\\CashFlow.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\randymxd06\\OneDrive\\Escritorio\\CashFlow\\CashFlow\\CashFlow\\CashFlow.csproj",
+        "projectUniqueName": "C:\\Users\\vjt25\\Desktop\\universidad\\dispositivos moviles\\git\\CashFlow\\CashFlow\\CashFlow\\CashFlow.csproj",
         "projectName": "CashFlow",
-        "projectPath": "C:\\Users\\randymxd06\\OneDrive\\Escritorio\\CashFlow\\CashFlow\\CashFlow\\CashFlow.csproj",
-        "packagesPath": "C:\\Users\\randymxd06\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\randymxd06\\OneDrive\\Escritorio\\CashFlow\\CashFlow\\CashFlow\\obj\\",
+        "projectPath": "C:\\Users\\vjt25\\Desktop\\universidad\\dispositivos moviles\\git\\CashFlow\\CashFlow\\CashFlow\\CashFlow.csproj",
+        "packagesPath": "C:\\Users\\vjt25\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vjt25\\Desktop\\universidad\\dispositivos moviles\\git\\CashFlow\\CashFlow\\CashFlow\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\randymxd06\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\vjt25\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

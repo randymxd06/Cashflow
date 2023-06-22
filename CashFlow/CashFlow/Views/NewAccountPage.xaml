@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:controls="clr-namespace:CashFlow.Controls;assembly=CashFlow"
+             x:Class="CashFlow.Views.NewAccountPage"
+              Visual="Material"
+             xmlns:vm="clr-namespace:CashFlow.ViewModels">
+    <ContentPage.BindingContext>
+        <vm:NewAccountViewModel />
+    </ContentPage.BindingContext>
+    <!-- Establecer HasNavigationBar en false -->
+    <NavigationPage.HasNavigationBar>
+        <OnPlatform x:TypeArguments="x:Boolean">
+            <On Platform="Android">False</On>
+            <On Platform="iOS">False</On>
+            <On Platform="UWP">False</On>
+        </OnPlatform>
+    </NavigationPage.HasNavigationBar>
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <!-- Background with gradient -->
+            <BoxView Grid.RowSpan="3">
+                <BoxView.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                        <GradientStop Color="{StaticResource SecondaryColor}" Offset="0" />
+                        <GradientStop Color="{StaticResource AccentColor}" Offset="0.30" />
+                        <GradientStop Color="#F5F5F5" Offset="0.8" />
+                    </LinearGradientBrush>
+                </BoxView.Background>
+            </BoxView>
+
+            <!-- Title -->
+            <StackLayout  Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Start" Margin="0,55,0,0">
+                <Label Text="Ca" FontSize="34" TextColor="White" />
+                <Label Text="$" FontSize="34" TextColor="White" />
+                <Label Text="hFlow" FontSize="34" TextColor="White" />
+            </StackLayout>
+            
+
+
+            <Frame x:Name="loginFrame"
+                   Grid.Row="1"
+
+                   BackgroundColor="#F5F5F5"
+                   CornerRadius="25"
+                   BorderColor="Transparent"
+                   HasShadow="False"
+                   Margin="0,86,0,0"
+                   >
+
+                <StackLayout VerticalOptions="Start"  HeightRequest="450">
+                    <Label Text="Crear cuenta" Margin="0,8,0,20" HorizontalOptions="CenterAndExpand" TextColor="Black" FontSize="20" FontAttributes="Bold"/>
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+                        <!-- Stepper -->
+                        <Grid Margin="0,0,0,0"
+                                      HorizontalOptions="FillAndExpand"
+                                      VerticalOptions="FillAndExpand"
+                                      HeightRequest="120"
+                                      >
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition Width="auto"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+
+                            <StackLayout  Padding="10"
+                                           Grid.Column="0"
+                                        Grid.Row="0"
+                                                  HorizontalOptions="Center">
+                                <Frame x:Name="paso_1" BackgroundColor="{Binding Step1Color}" CornerRadius="100" WidthRequest="15" HeightRequest="15" VerticalOptions="Center" HorizontalOptions="Center" >
+
+                                    <Label TextColor="Black" Text="1" FontSize="14" VerticalOptions="Center" HorizontalOptions="Center"/>
+                                </Frame>
+
+                                <Label 
+                                           Text="Paso 1"
+                                           TextColor="Black"
+                                           FontSize="15"
+                                           HorizontalOptions="CenterAndExpand" 
+                                           />
+
+                            </StackLayout>
+                            <BoxView  Grid.Column="1" WidthRequest="50" HeightRequest="0.5"  BackgroundColor="Gray" VerticalOptions="Center" HorizontalOptions="FillAndExpand" />
+
+                            <StackLayout  Padding="10"
+                                        Grid.Row="0" Grid.Column="2"
+                                                  HorizontalOptions="CenterAndExpand">
+                                <Frame x:Name="paso_2" BackgroundColor="{Binding Step2Color}" CornerRadius="100" WidthRequest="15" HeightRequest="15" VerticalOptions="Center" HorizontalOptions="Center" >
+
+                                    <Label TextColor="Black" Text="2" FontSize="14" VerticalOptions="Center" HorizontalOptions="Center"/>
+                                </Frame>
+
+                                <Label 
+                                           Text="Paso 2"
+                                           TextColor="Black"
+                                           FontSize="15"
+                                           HorizontalOptions="CenterAndExpand" 
+                                           />
+
+                            </StackLayout>
+                            <BoxView  Grid.Column="3" WidthRequest="50" HeightRequest="0.5"  BackgroundColor="Gray" VerticalOptions="Center" HorizontalOptions="FillAndExpand" />
+
+                            <StackLayout  Padding="10"
+                                        Grid.Row="0" Grid.Column="4"
+                                                  HorizontalOptions="CenterAndExpand">
+                                <Frame x:Name="paso_3" BackgroundColor="{Binding Step3Color}" CornerRadius="100" WidthRequest="15" HeightRequest="15" VerticalOptions="Center" HorizontalOptions="Center" >
+
+                                    <Label TextColor="Black" Text="3" FontSize="14" VerticalOptions="Center" HorizontalOptions="Center"/>
+                                </Frame>
+
+                                <Label 
+                                           Text="Paso 3"
+                                           TextColor="Black"
+                                           FontSize="15"
+                                           HorizontalOptions="CenterAndExpand" 
+                                           />
+
+                            </StackLayout>
+                          
+
+
+                        </Grid>
+                    
+
+
+                        
+                    </StackLayout>
+                    <!-- Datos Personales [Paso 1] -->
+                    <Grid   IsVisible="{Binding IsStackLayout1Visible}"
+                        
+                        HorizontalOptions="FillAndExpand">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+
+                        <Label  Grid.Column="0" Grid.Row="0" Margin="0,0,8,0" Text="&#xfeb5;" FontFamily="Icons" TextColor="{StaticResource SubtitleColor}" FontSize="32" HorizontalOptions="Center" VerticalOptions="Center" />
+                        <controls:ModernEntry
+                            HeightRequest="50"
+                            Grid.Column="1"
+                             Grid.Row="0"
+                            Placeholder="Nombres"
+                            CornerRadius="9"
+                            BorderThickness="2"
+                            BorderColor="{StaticResource BorderColor}
+                            
+                            "/>
+                        <Label  Grid.Column="0" Grid.Row="1" Margin="0,0,8,0" Text="&#xfeb5;" FontFamily="Icons" TextColor="{StaticResource SubtitleColor}" FontSize="32" HorizontalOptions="Center" VerticalOptions="Center" />
+                        <controls:ModernEntry
+                            HeightRequest="50"
+                            Grid.Column="1"
+                             Grid.Row="1"
+                            Placeholder="Apellidos"
+                            CornerRadius="9"
+                            BorderThickness="2"
+                            BorderColor="{StaticResource BorderColor}
+                            
+                            "/>
+                        <Label  Grid.Column="0" Grid.Row="2" Margin="0,0,8,0" Text="&#xfeb5;" FontFamily="Icons" TextColor="{StaticResource SubtitleColor}" FontSize="32" HorizontalOptions="Center" VerticalOptions="Center" />
+                        <controls:ModernEntry
+                            HeightRequest="50"
+                            Grid.Column="1"
+                             Grid.Row="2"
+                            Placeholder="Cedula"
+                            CornerRadius="9"
+                            BorderThickness="2"
+                            BorderColor="{StaticResource BorderColor}
+                            
+                            
+                            "/>
+
+                        <DatePicker   Grid.Column="1" Grid.Row="3"/>
+
+
+
+                    </Grid>
+
+                    <Grid   IsVisible="{Binding IsStackLayout2Visible}"
+                        
+                        HorizontalOptions="FillAndExpand">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+
+                        <Label  Grid.Column="0" Grid.Row="0" Margin="0,0,8,0" Text="&#xfeb5;" FontFamily="Icons" TextColor="{StaticResource SubtitleColor}" FontSize="32" HorizontalOptions="Center" VerticalOptions="Center" />
+                        <controls:ModernEntry
+                            HeightRequest="50"
+                            Grid.Column="1"
+                             Grid.Row="0"
+                            Placeholder="Cedula"
+                            CornerRadius="9"
+                            BorderThickness="2"
+                            BorderColor="{StaticResource BorderColor}
+                            
+                            "/>
+                        
+
+
+
+                    </Grid>
+
+
+                    <Grid   IsVisible="{Binding IsStackLayout3Visible}"
+                        
+                        HorizontalOptions="FillAndExpand">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+
+                        <Label  Grid.Column="0" Grid.Row="0" Margin="0,0,8,0" Text="&#xfeb5;" FontFamily="Icons" TextColor="{StaticResource SubtitleColor}" FontSize="32" HorizontalOptions="Center" VerticalOptions="Center" />
+                        <controls:ModernEntry
+                            HeightRequest="50"
+                            Grid.Column="1"
+                             Grid.Row="0"
+                            Placeholder="Paso 3"
+                            CornerRadius="9"
+                            BorderThickness="2"
+                            BorderColor="{StaticResource BorderColor}
+                            
+                            "/>
+
+
+
+
+                    </Grid>
+
+
+
+
+
+                </StackLayout>
+            </Frame>
+            <RelativeLayout IsVisible="true" Grid.Row="2" Background="#F5F5F5" VerticalOptions="FillAndExpand" HorizontalOptions="Center">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand"
+                             Background="#F5F5F5"
+                             
+                             RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent,
+                                                              Property=Width,
+                                                              Factor=0.5,
+                                                              Constant=-160}"
+            RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent,
+                                                              Property=Height,
+                                                              Factor=1,
+                                                              Constant=-80}">
+                    <Button x:Name="atras_btn"
+                            WidthRequest="160"
+                            
+                            BorderColor="Transparent"
+                            BorderWidth="0"
+                            CornerRadius="10"
+                            TextColor="White"
+                        HorizontalOptions="FillAndExpand"
+                            Text="{Binding ButtonText}"
+                    BackgroundColor="{Binding ButtonColor}"
+                    Command="{Binding DecreasePasosCommand}"
+                                             >
+                        
+                    </Button>
+                    <Button x:Name="siguiente_btn"
+                            Text="{Binding SgtButtonText}"
+                            BackgroundColor="{Binding SgtButtonColor}"
+                            WidthRequest="160"
+                            BorderColor="Transparent"
+                            BorderWidth="0"
+                            CornerRadius="10"
+                            TextColor="White"
+                            HeightRequest="70"
+                        HorizontalOptions="FillAndExpand"
+                            Command="{Binding IncreasePasosCommand}"
+                                             >
+                        
+                    </Button>
+                </StackLayout>
+
+            </RelativeLayout>
+ 
+        </Grid>
+
+        
+    </ContentPage.Content>
+</ContentPage>

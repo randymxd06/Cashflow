@@ -25,11 +25,11 @@ androidgeneratejnimarshalmethods=false
 os=windows_nt
 androidincludedebugsymbols=true
 androidpackagenamingpolicy=lowercasecrc64
-_nugetassetstimestamp=638228119729253569
+_nugetassetstimestamp=638229943093556628
 typemapkind=strings-asm
 androidsupportedabis=arm64-v8a
 armeabi-v7a
 x86
 x86_64
 androidmanifestplaceholders=
-projectfullpath=c:\users\randymxd06\onedrive\escritorio\cashflow\cashflow\cashflow.android\cashflow.android.csproj
+projectfullpath=c:\users\vjt25\desktop\universidad\dispositivos moviles\git\cashflow\cashflow\cashflow.android\cashflow.android.csproj

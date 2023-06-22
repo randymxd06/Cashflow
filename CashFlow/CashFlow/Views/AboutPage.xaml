@@ -112,8 +112,7 @@
                         <BoxView HeightRequest="1.2" Color="#E3E3E3" VerticalOptions="Center" HorizontalOptions="FillAndExpand"></BoxView>
                     </StackLayout>
                     <Button Text="CREAR CUENTA"
-                            x:Name="showcrearCuenta_btn"
-                            Clicked="showcrearCuenta_btn_Clicked"
+                            Command="{Binding NewAccountCommand}"
                             TextColor="{StaticResource SecondaryColor}"
                             BackgroundColor="#F5F5F5"
                             BorderColor="{StaticResource SecondaryColor}"

@@ -12,6 +12,7 @@ namespace CashFlow.Resources.Styles
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class GlobalColors : ResourceDictionary
     {
+
         public GlobalColors()
         {
         }

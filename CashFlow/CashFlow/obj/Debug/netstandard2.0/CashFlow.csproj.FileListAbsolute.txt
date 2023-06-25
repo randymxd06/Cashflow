@@ -81,3 +81,7 @@ C:\Users\vjt25\Desktop\universidad\dispositivos moviles\git\CashFlow\CashFlow\Ca
 C:\Users\vjt25\Desktop\universidad\dispositivos moviles\git\CashFlow\CashFlow\CashFlow\obj\Debug\netstandard2.0\refint\CashFlow.dll
 C:\Users\vjt25\Desktop\universidad\dispositivos moviles\git\CashFlow\CashFlow\CashFlow\obj\Debug\netstandard2.0\CashFlow.pdb
 C:\Users\vjt25\Desktop\universidad\dispositivos moviles\git\CashFlow\CashFlow\CashFlow\obj\Debug\netstandard2.0\Views\NewAccountPage.xaml.g.cs
+C:\Users\vjt25\Desktop\universidad\dispositivos moviles\git\CashFlow\CashFlow\CashFlow\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
+C:\Users\vjt25\Desktop\universidad\dispositivos moviles\git\CashFlow\CashFlow\CashFlow\obj\Debug\netstandard2.0\Views\View1.xaml.g.cs
+C:\Users\vjt25\Desktop\universidad\dispositivos moviles\git\CashFlow\CashFlow\CashFlow\obj\Debug\netstandard2.0\DesignTemplates\ProductoFrameTemplate.xaml.g.cs
+C:\Users\vjt25\Desktop\universidad\dispositivos moviles\git\CashFlow\CashFlow\CashFlow\obj\Debug\netstandard2.0\Views\ProductDetailPage.xaml.g.cs

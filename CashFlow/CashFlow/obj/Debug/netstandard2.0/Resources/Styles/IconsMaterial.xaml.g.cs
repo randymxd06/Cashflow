@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("CashFlow.Resources.Styles.IconsMaterial.xaml", "Resources/Styles/IconsMaterial.xaml", typeof(global::__XamlGeneratedCode__.@__Type0ba8c18f00814a87ae2fec59f4efeb0b))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("CashFlow.Resources.Styles.IconsMaterial.xaml", "Resources/Styles/IconsMaterial.xaml", typeof(global::__XamlGeneratedCode__.@__Typeaf669a34d5c8447381aeeb45231f062a))]
 
 namespace @__XamlGeneratedCode__ {
     
@@ -16,16 +16,16 @@ namespace @__XamlGeneratedCode__ {
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Resources\\Styles\\IconsMaterial.xaml")]
     [global::Xamarin.Forms.Xaml.XamlCompilationAttribute(global::Xamarin.Forms.Xaml.XamlCompilationOptions.Compile)]
     [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
-    public partial class @__Type0ba8c18f00814a87ae2fec59f4efeb0b : global::Xamarin.Forms.ResourceDictionary {
+    public partial class @__Typeaf669a34d5c8447381aeeb45231f062a : global::Xamarin.Forms.ResourceDictionary {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        public @__Type0ba8c18f00814a87ae2fec59f4efeb0b() {
+        public @__Typeaf669a34d5c8447381aeeb45231f062a() {
             this.InitializeComponent();
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(@__Type0ba8c18f00814a87ae2fec59f4efeb0b));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(@__Typeaf669a34d5c8447381aeeb45231f062a));
         }
     }
 }

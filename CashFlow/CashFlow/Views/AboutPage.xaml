@@ -4,7 +4,7 @@
              x:Class="CashFlow.Views.AboutPage"
              xmlns:controls="clr-namespace:CashFlow.Controls;assembly=CashFlow"
              xmlns:vm="clr-namespace:CashFlow.ViewModels"
-             Title="{Binding Title}"
+             Title="Login"
              BackgroundColor="#333333"
              Visual="Material">
 
@@ -193,7 +193,6 @@
                     <Button 
                         Text="Iniciar Sesión" 
                         x:Name="btn_haveAccount"
-                        Clicked="btn_haveAccount_Clicked"
                        BackgroundColor="#F5F5F5"
                          BorderColor="{StaticResource SecondaryColor}"
                         HeightRequest="55" 

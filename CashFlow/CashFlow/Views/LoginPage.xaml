@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CashFlow.Views.LoginPage"
+             
+             xmlns:vm="clr-namespace:CashFlow.ViewModels"
+             BackgroundColor="#333333"
+             Visual="Material">
+    
+    <!-- Establecer HasNavigationBar en false -->
+    <NavigationPage.HasNavigationBar>
+        <OnPlatform x:TypeArguments="x:Boolean">
+            <On Platform="Android">False</On>
+            <On Platform="iOS">False</On>
+            <On Platform="UWP">False</On>
+        </OnPlatform>
+    </NavigationPage.HasNavigationBar>
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <!-- Background with gradient -->
+            <BoxView Grid.RowSpan="2">
+                <BoxView.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                        <GradientStop Color="{StaticResource SecondaryColor}" Offset="0" />
+                        <GradientStop Color="{StaticResource AccentColor}" Offset="0.30" />
+                        <GradientStop Color="#F5F5F5" Offset="0.8" />
+                    </LinearGradientBrush>
+                </BoxView.Background>
+            </BoxView>
+
+            <!-- Title -->
+            
+            <StackLayout  Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Start" Margin="0,55,0,0">
+                <Label  FontSize="34" TextColor="White" >
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Ca" ></Span>
+                            <Span Text="$" FontAttributes="Bold" FontSize="34" TextColor="Yellow"></Span>
+                            <Span Text="hFlow" ></Span>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </StackLayout>
+            <StackLayout>
+
+            </StackLayout>
+
+            <!-- Content LoginFrame-->
+            <Frame x:Name="loginFrame"
+                   IsVisible="true"
+                   Grid.Row="1"
+                   BackgroundColor="#F5F5F5"
+                   CornerRadius="25"
+                   BorderColor="Transparent"
+                   HasShadow="False"
+                   Margin="0,86,0,0"
+                   >
+
+                <StackLayout VerticalOptions="CenterAndExpand"  >
+                    <Label Text="Iniciar Sesión" Margin="0,-30,0,20" HorizontalOptions="CenterAndExpand" TextColor="Black" FontSize="20" FontAttributes="Bold"/>
+                    <Grid HorizontalOptions="FillAndExpand">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <BoxView  Grid.Row="0" Grid.ColumnSpan="2" BackgroundColor="{StaticResource SeparatorColor}" HeightRequest="0.1"/>
+
+                        <Label Padding="15,0,0,0" Grid.Column="0" Grid.Row="0" Margin="0,0,8,0" Text="&#xfeb5;" FontFamily="Icons" TextColor="{StaticResource SubtitleColor}" FontSize="32" HorizontalOptions="Center" VerticalOptions="Center" />
+                       
+                        <Entry Grid.Column="1"
+                               Grid.ColumnSpan="2"
+                             Grid.Row="0"
+                               Placeholder="Usuario"/>
+                        <BoxView  Grid.Row="1" Grid.ColumnSpan="2" BackgroundColor="{StaticResource SeparatorColor}" HeightRequest="0.1"/>
+                        <Label Padding="15,0,0,0" Grid.Column="0" Grid.Row="1" Margin="0,0,8,0" Text="{StaticResource IconLockOutline}" FontFamily="Icons" TextColor="{StaticResource SubtitleColor}" FontSize="32" HorizontalOptions="Center" VerticalOptions="Center" />
+                        <Entry  Grid.Column="1"
+                               Grid.ColumnSpan="2"
+                             Grid.Row="1"
+                                Placeholder="Contraseña" IsPassword="{Binding IsPassword}"/>
+                        <Label 
+                            Padding="15,0,0,0"
+                            Grid.Column="2"
+                            Grid.Row="1"
+                            Margin="40,0,0,0"
+                            Text="{Binding PasswordIcon}"
+                            FontFamily="Icons"
+                            TextColor="{StaticResource SubtitleColor}"
+                            FontSize="32"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center">
+                            <Label.GestureRecognizers >
+                                <TapGestureRecognizer Command="{Binding TogglePasswordCommand}"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+
+
+
+                    </Grid>
+
+
+                    <Button 
+                        Text="Iniciar Sesión" 
+                        BackgroundColor="{StaticResource SecondaryColor}"  
+                        HeightRequest="55" 
+                        TextColor="white" 
+                        Margin="0,26,0,10" 
+                        CornerRadius="10" 
+                        Command="{Binding LoginCommand}"/>
+                    <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal" Margin="0,35,0,24">
+                        <BoxView HeightRequest="1" MinimumHeightRequest="1" Color="#E3E3E3" VerticalOptions="Center" HorizontalOptions="FillAndExpand"></BoxView>
+                        <Label Text="¿Aun no tienes una cuenta?" VerticalOptions="Center" Margin="5" />
+                        <BoxView HeightRequest="1.2" Color="#E3E3E3" VerticalOptions="Center" HorizontalOptions="FillAndExpand"></BoxView>
+                    </StackLayout>
+                    <Button Text="CREAR CUENTA"
+                            Command="{Binding NewAccountCommand}"
+                            TextColor="{StaticResource SecondaryColor}"
+                            BackgroundColor="#F5F5F5"
+                            BorderColor="{StaticResource SecondaryColor}"
+                            BorderWidth="1"
+                            HeightRequest="55"
+                            CornerRadius="10"  />
+
+                </StackLayout>
+            </Frame>
+            
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

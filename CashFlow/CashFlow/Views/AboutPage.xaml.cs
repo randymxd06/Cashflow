@@ -35,12 +35,7 @@ namespace CashFlow.Views
             if (loginFrame != null)
             {
 
-                newAccountFrame.IsVisible = true;
-                newAccountFrame.Opacity = 0;
-                newAccountFrame.FadeTo(1, 350);
-                newAccountFrame.TranslateTo(0, 0, 350);
-                loginFrame.TranslateTo(-600, 0, 350);
-                loginFrame.FadeTo(0, 350);
+               
             }
         }
 
@@ -49,12 +44,7 @@ namespace CashFlow.Views
             if(loginFrame != null)
             {
 
-                loginFrame.TranslateTo(0, 0, 350);
-                loginFrame.FadeTo(1, 350);
-                newAccountFrame.TranslateTo(600, 0, 350);
-                newAccountFrame.FadeTo(0, 350);
-
-                newAccountFrame.IsVisible = true;
+                
             }
         }
     }

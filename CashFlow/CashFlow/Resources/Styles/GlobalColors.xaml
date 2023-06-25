@@ -18,7 +18,11 @@
     <!-- Color principal -->
     <Color x:Key="PrimaryColor">#46EAF0</Color>
     <Color x:Key="SecondaryColor">#4787FA</Color>
-    
+
+    <Color x:Key="BlueColor">#4787FA</Color>
+    <Color x:Key="BlueColorLight">#A6C6FD</Color>
+    <Color x:Key="BlueColorDark">#0C4FA3</Color>
+
     <!-- Color de fondo -->
     <Color x:Key="BackgroundColor">#EFEFF6</Color>
 

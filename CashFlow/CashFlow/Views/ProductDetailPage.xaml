@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:microcharts="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
+             x:Class="CashFlow.Views.ProductDetailPage">
+    <NavigationPage.HasNavigationBar>
+        <OnPlatform x:TypeArguments="x:Boolean">
+            <On Platform="Android">False</On>
+            <On Platform="iOS">False</On>
+            <On Platform="UWP">False</On>
+        </OnPlatform>
+    </NavigationPage.HasNavigationBar>
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <BoxView Grid.RowSpan="2">
+                <BoxView.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                        <GradientStop Color="{StaticResource SecondaryColor}" Offset="0" />
+                        <GradientStop Color="{StaticResource AccentColor}" Offset="0.30" />
+                        <GradientStop Color="#F5F5F5" Offset="0.8" />
+                    </LinearGradientBrush>
+                </BoxView.Background>
+            </BoxView>
+            <StackLayout>
+                <StackLayout  Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Margin="0,25,0,0">
+                    
+                    <Label  Text="{StaticResource IconArrowLeft}"
+                            FontFamily="Icons"
+                            VerticalOptions="CenterAndExpand"
+                            TextColor="White"
+                            FontSize="26">
+                        
+                    </Label>
+                    <Label Text="Detalles de cuenta" FontSize="26" TextColor="White" VerticalOptions="CenterAndExpand"/>
+                </StackLayout>
+
+
+            </StackLayout>
+            <Frame 
+                   IsVisible="true"
+                   Grid.Row="1"
+                Grid.RowSpan="2"
+                   BackgroundColor="#F5F5F5"
+                   CornerRadius="25"
+                   BorderColor="Transparent"
+                   HasShadow="False"
+                   Margin="0,5,0,0"
+                HorizontalOptions="FillAndExpand"
+                Padding="0"
+                   >
+                <ScrollView VerticalOptions="FillAndExpand" Padding="0">
+                    <StackLayout>
+                        <Frame HorizontalOptions="FillAndExpand" HasShadow="False"
+                               BackgroundColor="{StaticResource BlueColor}"
+                               CornerRadius="25">
+                            <StackLayout>
+                                <Label TextColor="white" FontAttributes="Bold" FontSize="20" Text="Cuenta Corriente" HorizontalOptions="Center"/>
+                                <Label TextColor="white" FontAttributes="None" FontSize="19" Text="45545454545" HorizontalOptions="Center"/>
+
+                            </StackLayout>
+                        </Frame>
+                        <StackLayout Orientation="Vertical" Padding="20"  Margin="0">
+                            
+
+                            <Label  FontSize="19"
+                                Text="Balance"
+                                HorizontalOptions="StartAndExpand"
+                                TextColor="{StaticResource TitleColor}"/>
+                            <Label TextColor="{StaticResource TitleColor}"  FontSize="34" Text="$-100,000.00" HorizontalOptions="StartAndExpand"/>
+                            <Frame CornerRadius="20" BackgroundColor="White" Margin="0,10,0,0" Padding="0"
+                                   HasShadow="False">
+                                <microcharts:ChartView
+                                x:Name="chartViewBar" HeightRequest="250"  Margin="-10,20,-10,0"/>
+                            </Frame>
+                            <Grid Margin="0,20,0,0"
+                              
+                                  HorizontalOptions="CenterAndExpand"
+                                  VerticalOptions="CenterAndExpand"
+                                  HeightRequest="120"
+                                  >
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="auto"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+
+
+                                <Button
+                                Grid.Row="1"
+                                    Grid.Column="1"
+                                    Text="Tranferir"
+                                    BorderColor="Transparent"
+                                    BorderWidth="0"
+                                    CornerRadius="20"
+                                    TextColor="White"
+                                    HorizontalOptions="FillAndExpand"
+                                    BackgroundColor="{StaticResource SecondaryColor}"                              
+                                             >
+                                    <Button.ImageSource >
+                                        <FontImageSource
+                                            FontFamily="Icons"
+                                            FlexLayout.AlignSelf="Start"
+                                            Color="White"
+                                            Glyph="{StaticResource IconBankTransfer}" />
+                                    </Button.ImageSource>
+                                </Button>
+                                <Button Grid.Row="1"
+                                    Grid.Column="0"
+                                    Text="Transacciones"
+                                    BorderColor="Transparent"
+                                    BorderWidth="0"
+                                    CornerRadius="20"
+                                    TextColor="White"
+                                    HorizontalOptions="FillAndExpand"
+                                    BackgroundColor="{StaticResource SecondaryColor}"                              
+                                             >
+                                    <Button.ImageSource >
+                                        <FontImageSource
+                                            FontFamily="Icons"
+                                            FlexLayout.AlignSelf="Start"
+                                            Color="White"
+                                            Glyph="{StaticResource IconBankTransfer}" />
+                                    </Button.ImageSource>
+                                </Button>
+
+                            </Grid>
+
+                        </StackLayout>
+                    </StackLayout>
+                    
+                </ScrollView>
+
+            </Frame>
+
+
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

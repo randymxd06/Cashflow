@@ -1,4 +1,5 @@
 ﻿using CashFlow.Resources.Styles;
+using CashFlow.Utils;
 using CashFlow.Views;
 using System;
 using System.Diagnostics;
@@ -205,11 +206,26 @@ namespace CashFlow.ViewModels
             }
         }
 
-        private void DecreasePasos()
+        private async void DecreasePasos()
         {
+
+
+           
             if (Pasos > 1)
             {
                 Pasos--;
+            }
+            if (Pasos == 1)
+            {
+                var res = await App.Current.MainPage.DisplayAlert("Advertencia", "Vas a cancelar el registro", "Ok", "Cancelar");
+
+                if (res)
+                {//logic
+                    await NavigationDispatcher.Instance.Navigation.PopModalAsync();
+                } else {//logic
+
+                 }
+                    
             }
         }
     }

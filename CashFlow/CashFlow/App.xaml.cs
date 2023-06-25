@@ -1,4 +1,5 @@
 ﻿using CashFlow.Services;
+using CashFlow.Utils;
 using CashFlow.Views;
 using System;
 using Xamarin.Forms;
@@ -16,7 +17,8 @@ namespace CashFlow
 
             DependencyService.Register<MockDataStore>();
            
-            MainPage = new NavigationPage(new AboutPage());
+            MainPage = new NavigationPage(new LoginPage());
+            NavigationDispatcher.Instance.Initialize(MainPage.Navigation);
         }
 
         protected override void OnStart()

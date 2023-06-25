@@ -42,9 +42,13 @@
       "frameworks": {
         "monoandroid13.0": {
           "dependencies": {
+            "Microcharts.Forms": {
+              "target": "Package",
+              "version": "[0.9.5.9, )"
+            },
             "Xamarin.Essentials": {
               "target": "Package",
-              "version": "[1.7.5, )"
+              "version": "[1.7.6, )"
             },
             "Xamarin.Forms": {
               "target": "Package",
@@ -99,6 +103,10 @@
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "dependencies": {
+            "Microcharts.Forms": {
+              "target": "Package",
+              "version": "[0.9.5.9, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
@@ -107,7 +115,7 @@
             },
             "Xamarin.Essentials": {
               "target": "Package",
-              "version": "[1.7.5, )"
+              "version": "[1.7.6, )"
             },
             "Xamarin.Forms": {
               "target": "Package",

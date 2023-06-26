@@ -14,6 +14,7 @@
 
   <ItemGroup>
     <None Remove="Resources\Fonts\materialdesignicons-webfont.ttf" />
+    <None Remove="Resources\Images\Mobile.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -22,6 +23,7 @@
 
   <ItemGroup>
     <EmbeddedResource Include="Resources\Fonts\materialdesignicons-webfont.ttf" />
+    <EmbeddedResource Include="Resources\Images\Mobile.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -41,6 +43,9 @@
     <EmbeddedResource Update="Resources\Styles\IconsMaterial.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="Views\BeneficiaryPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Views\HomePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -54,6 +59,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\ProductDetailPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\ProductPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\ProfilePage.xaml">

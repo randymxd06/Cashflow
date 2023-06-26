@@ -149,12 +149,12 @@
                         <StackLayout Grid.Column="1"
                              Grid.Row="0"
                              Orientation="Horizontal" HorizontalOptions="FillAndExpand">
-                            <Entry BackgroundColor="{StaticResource SeparatorColor}"
+                            <Entry BackgroundColor="{StaticResource CityLights}"
                                PlaceholderColor="{StaticResource SubtitleColor}"
                                Placeholder="Nombre"
                                    HorizontalOptions="FillAndExpand"
                                />
-                            <Entry BackgroundColor="{StaticResource SeparatorColor}"
+                            <Entry BackgroundColor="{StaticResource CityLights}"
                                PlaceholderColor="{StaticResource SubtitleColor}"
                                Placeholder="Apellido"
                                HorizontalOptions="FillAndExpand"
@@ -165,11 +165,12 @@
                         <Entry 
                             Grid.Column="1"
                             Grid.Row="1"
-                            BackgroundColor="{StaticResource SeparatorColor}"
+                            BackgroundColor="{StaticResource CityLights}"
                             PlaceholderColor="{StaticResource SubtitleColor}"
                             Placeholder="Cedula"
                             HorizontalOptions="FillAndExpand"
                              Keyboard="Numeric"
+                            
                                />
                         
                         <Label  Grid.Column="0" Grid.Row="2" Margin="0,0,8,0" Text="{StaticResource IconCalendar}" FontFamily="Icons" TextColor="{StaticResource SubtitleColor}" FontSize="32" HorizontalOptions="Center" VerticalOptions="Center" />
@@ -178,7 +179,7 @@
                         <DatePicker 
                             Grid.Column="1"
                             Grid.Row="2"   
-                            BackgroundColor="{StaticResource SeparatorColor}"
+                           BackgroundColor="{StaticResource CityLights}"
                             TextColor="{StaticResource SubtitleColor}"
                             
                                     />
@@ -188,7 +189,7 @@
                         <Entry 
                             Grid.Column="1"
                             Grid.Row="3"
-                            BackgroundColor="{StaticResource SeparatorColor}"
+                            BackgroundColor="{StaticResource CityLights}"
                             PlaceholderColor="{StaticResource SubtitleColor}"
                             Placeholder="Correo"
                             HorizontalOptions="FillAndExpand"
@@ -202,7 +203,7 @@
                         <Entry 
                             Grid.Column="1"
                             Grid.Row="4"
-                            BackgroundColor="{StaticResource SeparatorColor}"
+                            BackgroundColor="{StaticResource CityLights}"
                             PlaceholderColor="{StaticResource SubtitleColor}"
                             Placeholder="Telefóno"
                             HorizontalOptions="FillAndExpand"
@@ -214,7 +215,7 @@
                         <Entry 
                             Grid.Column="1"
                             Grid.Row="5"
-                            BackgroundColor="{StaticResource SeparatorColor}"
+                            BackgroundColor="{StaticResource CityLights}"
                             PlaceholderColor="{StaticResource SubtitleColor}"
                             Placeholder="Direccion"
                             HorizontalOptions="FillAndExpand"
@@ -246,7 +247,7 @@
                         <Entry 
                             Grid.Column="1"
                             Grid.Row="0"
-                            BackgroundColor="{StaticResource SeparatorColor}"
+                            BackgroundColor="{StaticResource CityLights}"
                             PlaceholderColor="{StaticResource SubtitleColor}"
                             Placeholder="Empresa"
                             HorizontalOptions="FillAndExpand"
@@ -261,7 +262,7 @@
                         <Entry 
                             Grid.Column="1"
                             Grid.Row="1"
-                            BackgroundColor="{StaticResource SeparatorColor}"
+                            BackgroundColor="{StaticResource CityLights}"
                             PlaceholderColor="{StaticResource SubtitleColor}"
                             Placeholder="Telefóno empresa"
                             HorizontalOptions="FillAndExpand"
@@ -273,7 +274,7 @@
                         <Entry 
                             Grid.Column="1"
                             Grid.Row="2"
-                            BackgroundColor="{StaticResource SeparatorColor}"
+                           BackgroundColor="{StaticResource CityLights}"
                             PlaceholderColor="{StaticResource SubtitleColor}"
                             Placeholder="Direccion de la empresa"
                             HorizontalOptions="FillAndExpand"
@@ -297,7 +298,7 @@
                         <Entry 
                             Grid.Column="1"
                             Grid.Row="0"
-                            BackgroundColor="{StaticResource SeparatorColor}"
+                            BackgroundColor="{StaticResource CityLights}"
                             PlaceholderColor="{StaticResource SubtitleColor}"
                             Placeholder="Nombre de usuario"
                             HorizontalOptions="FillAndExpand"
@@ -307,7 +308,7 @@
                         <Entry 
                             Grid.Column="1"
                             Grid.Row="1"
-                            BackgroundColor="{StaticResource SeparatorColor}"
+                            BackgroundColor="{StaticResource CityLights}"
                             PlaceholderColor="{StaticResource SubtitleColor}"
                             Placeholder="Contraseña"
                             HorizontalOptions="FillAndExpand"
@@ -317,13 +318,18 @@
                         <Entry 
                             Grid.Column="1"
                             Grid.Row="2"
-                            BackgroundColor="{StaticResource SeparatorColor}"
+                            BackgroundColor="{StaticResource CityLights}"
                             PlaceholderColor="{StaticResource SubtitleColor}"
                             Placeholder="Confirmar contraseña"
                             HorizontalOptions="FillAndExpand"
                              
                                />
-                        <Button Grid.Row="3" Grid.ColumnSpan="2" Text="Validar Cedula" BackgroundColor="{StaticResource SecondaryColor}"/>
+                        <Button
+                            CornerRadius="20"
+                            Grid.Row="3"
+                            Grid.ColumnSpan="2"
+                            Text="Validar Cedula"
+                            BackgroundColor="{StaticResource ElectronBlue}"/>
 
 
                     </Grid>
@@ -351,7 +357,7 @@
                             
                             BorderColor="Transparent"
                             BorderWidth="0"
-                            CornerRadius="10"
+                            CornerRadius="20"
                             TextColor="White"
                         HorizontalOptions="FillAndExpand"
                             Text="{Binding ButtonText}"
@@ -366,7 +372,7 @@
                             WidthRequest="160"
                             BorderColor="Transparent"
                             BorderWidth="0"
-                            CornerRadius="10"
+                           CornerRadius="20"
                             TextColor="White"
                             HeightRequest="60"
                         HorizontalOptions="FillAndExpand"

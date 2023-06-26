@@ -14,39 +14,54 @@
             <BoxView Grid.RowSpan="2">
                 <BoxView.Background>
                     <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
-                        <GradientStop Color="{StaticResource SecondaryColor}" Offset="0" />
-                        <GradientStop Color="{StaticResource AccentColor}" Offset="0.30" />
+                        <GradientStop Color="{StaticResource ElectronBlue}" Offset="0" />
+                        <GradientStop Color="{StaticResource ExodusFruit}" Offset="0.1" />
+                        <GradientStop Color="{StaticResource AccentColor}" Offset="0.2" />
                         <GradientStop Color="#F5F5F5" Offset="0.8" />
                     </LinearGradientBrush>
                 </BoxView.Background>
             </BoxView>
 
-            <StackLayout Grid.Row="0" Padding="20" HorizontalOptions="Center" VerticalOptions="Center">
-                <Label Text="TRANSFERIR A CUENTAS DE TERCEROS" FontSize="20" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            <StackLayout Grid.Row="0" Padding="20"  HorizontalOptions="Center" VerticalOptions="Center">
+                <Label 
+                    Margin="0,20,0,0"
+                    Text="TRANSFERIR"
+                    FontSize="20"
+                    TextColor="White"
+                    HorizontalTextAlignment="Center"
+                    VerticalTextAlignment="Center"/>
             </StackLayout>
             <Frame 
                    IsVisible="true"
                    Grid.Row="1"
-                   BackgroundColor="#F5F5F5"
+                   BackgroundColor="{StaticResource White}"
                    CornerRadius="25"
                    BorderColor="Transparent"
                    HasShadow="False"
-                   Margin="0,24,0,0"
+                   Margin="0,13,0,0"
                 HorizontalOptions="FillAndExpand"
                    >
                 <StackLayout>
-                    <Label Text="Desde cuenta:"/>
-                    <Picker 
+                    <Label 
+                        FontSize="20"
+                        TextColor="{StaticResource AmericanRiver}"
+                        FontAttributes="Bold"
+                        Text="Desde cuenta:"/>
+                    <Picker BackgroundColor="{StaticResource CityLights}"
                      Title="Selecciona tu cuenta"
                      TitleColor="gray">
                         <Picker.Items>
-                            <x:String>Pedro Perez / 930940395</x:String>
-                            <x:String>Palito de coco / 090909090</x:String>
+                            <x:String>930940395 / $10,000.00</x:String>
+                            <x:String>930940395 / $100,000.00</x:String>
                         </Picker.Items>
                     </Picker>
 
-                    <Label Text="Para la cuenta:"/>
+                    <Label Text="Para la cuenta:"
+                             FontSize="20"
+                            TextColor="{StaticResource AmericanRiver}"
+                            FontAttributes="Bold"/>
                     <Picker 
+                         BackgroundColor="{StaticResource CityLights}"
                      Title="Selecciona tu cuenta a transferir"
                      TitleColor="gray">
                         <Picker.Items>
@@ -55,18 +70,52 @@
                         </Picker.Items>
                     </Picker>
 
-                    <Label Text="Monto a tranferir:"/>
-                    <controls:ModernEntry
-                        
-                            HeightRequest="50"
+                    <Label 
+                         FontSize="20"
+                        TextColor="{StaticResource AmericanRiver}"
+                        FontAttributes="Bold"
+                        Text="Monto a tranferir:"/>
+                    <Entry
+                         Keyboard="Numeric"
+                            HeightRequest="60"
                             Grid.Column="1"
                              Grid.Row="0"
-                            Placeholder="Monto a tranferir"
-                            CornerRadius="9"
-                            BorderThickness="2"
-                            BorderColor="{StaticResource BorderColor}
-                            
-                            "/>
+                            />
+                    <Label Text="Descripcion:"
+                            FontSize="20"
+                            TextColor="{StaticResource AmericanRiver}"
+                            FontAttributes="Bold"
+                           />
+                    <Entry
+                        
+                            HeightRequest="200"
+                         VerticalOptions="Start"
+                         Keyboard="Chat"
+                         HorizontalOptions="FillAndExpand"
+                            />
+
+                    <StackLayout Orientation="Horizontal"  >
+                        <Button 
+                            CornerRadius="20"
+                            Margin="30,0,0,0"
+                            Text="Cancelar"
+                            VerticalOptions="EndAndExpand"
+                            BackgroundColor="{StaticResource WarningColor}"
+                            HeightRequest="45"
+                                HorizontalOptions="StartAndExpand"
+                            />
+                        <Button
+                            CornerRadius="20"
+                             Margin="0,0,30,0"
+                            Text="continuar"
+                            VerticalOptions="EndAndExpand"
+                            BackgroundColor="{StaticResource ElectronBlue}"
+                            HeightRequest="45"
+                                 HorizontalOptions="EndAndExpand"
+                            />
+                    </StackLayout>
+                    
+
                 </StackLayout>
                 
             </Frame>

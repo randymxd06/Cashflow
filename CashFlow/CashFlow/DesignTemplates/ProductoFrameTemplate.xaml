@@ -2,10 +2,13 @@
 <Frame xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CashFlow.DesignTemplates.ProductoFrameTemplate"
-       BorderColor="Gray" HasShadow="True" CornerRadius="12" HeightRequest="200" Padding="0">
+       BorderColor="Gray" HasShadow="True" CornerRadius="12" HeightRequest="200" Padding="0"
+       Margin="0,0,0,10"
+       >
     <Frame.Background>
         <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-            <GradientStop Color="{StaticResource SecondaryColor}" Offset="0" />
+            <GradientStop Color="{StaticResource ElectronBlue}" Offset="0" />
+            <GradientStop Color="{StaticResource ExodusFruit}" Offset="0.5" />
             <GradientStop Color="{StaticResource AccentColor}" Offset="1" />
         </LinearGradientBrush>
     </Frame.Background>
@@ -28,12 +31,12 @@
             </Grid.RowDefinitions>
 
             <StackLayout Padding="10" Grid.Row="0" Grid.Column="0" HorizontalOptions="CenterAndExpand">
-                <Button CornerRadius="45" WidthRequest="55" HeightRequest="55" Text="{StaticResource IconHistory}" TextColor="White" FontFamily="Icons" FontSize="34" BackgroundColor="{StaticResource TitleColor}" HorizontalOptions="CenterAndExpand"/>
+                <Button CornerRadius="45" WidthRequest="55" HeightRequest="55" Text="{StaticResource IconHistory}" TextColor="{StaticResource AmericanRiver}" FontFamily="Icons" FontSize="34" BackgroundColor="{StaticResource CityLights}" HorizontalOptions="CenterAndExpand"/>
                 <Label Text="Historial" TextColor="Black" FontSize="15" HorizontalOptions="CenterAndExpand" />
             </StackLayout>
 
             <StackLayout Padding="10" Grid.Row="0" Grid.Column="1" HorizontalOptions="CenterAndExpand">
-                <Button CornerRadius="45" WidthRequest="55" HeightRequest="55" Text="{StaticResource IconBankTransfer}" TextColor="White" FontFamily="Icons" FontSize="34" BackgroundColor="{StaticResource TitleColor}" HorizontalOptions="CenterAndExpand"/>
+                <Button CornerRadius="45" WidthRequest="55" HeightRequest="55" Text="{StaticResource IconBankTransfer}" TextColor="{StaticResource AmericanRiver}" FontFamily="Icons" FontSize="34" BackgroundColor="{StaticResource CityLights}" HorizontalOptions="CenterAndExpand"/>
                 <Label Text="Transacciones" TextColor="Black" FontSize="15" HorizontalOptions="CenterAndExpand" />
             </StackLayout>
         </Grid>

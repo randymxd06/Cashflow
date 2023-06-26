@@ -51,7 +51,7 @@
             </ControlTemplate>
 
             <Style TargetType="Entry">
-                <Setter Property="BackgroundColor" Value="{StaticResource SeparatorColor}" />
+                <Setter Property="BackgroundColor" Value="{StaticResource CityLights}" />
                 <Setter Property="PlaceholderColor" Value="{StaticResource SubtitleColor}" />
             </Style>
             <ResourceDictionary.MergedDictionaries>

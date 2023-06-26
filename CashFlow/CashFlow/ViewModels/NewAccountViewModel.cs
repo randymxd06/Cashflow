@@ -155,16 +155,23 @@ namespace CashFlow.ViewModels
 
         private void UpdateButtonProperties()
         {
+            Application.Current.Resources.TryGetValue("BrightYarrow", out var Orange);
+            Application.Current.Resources.TryGetValue("SoothingBreeze", out var Gray);
+            Application.Current.Resources.TryGetValue("MintLeaf", out var Green);
+            Application.Current.Resources.TryGetValue("ElectronBlue", out var Blue);
+
+            Application.Current.Resources.TryGetValue("WarningColor", out var WarningColor);
             if (Pasos == 1)
             {
-                Step1Color = Color.Orange;
-                Step2Color = Color.Gray;
-                Step3Color = Color.Gray;
+                
+                Step1Color = (Color)Orange;
+                Step2Color = (Color)Gray;
+                Step3Color = (Color)Gray;
                 ButtonText = "Cancelar";
                 SgtButtonText = "Siguiente";
                 Debug.WriteLine(Application.Current.Resources.Values);
-                ButtonColor = Color.FromHex("F3905A");
-                SgtButtonColor = Color.Blue;
+                ButtonColor = (Color)WarningColor;
+                SgtButtonColor = (Color)Blue;
 
                 IsStackLayout1Visible = true;
                 IsStackLayout2Visible = false;
@@ -172,26 +179,26 @@ namespace CashFlow.ViewModels
             }
             else if (Pasos == 2) 
             {
-                Step1Color = Color.LightGreen;
-                Step2Color = Color.Orange;
-                Step3Color = Color.Gray;
+                Step1Color = (Color)Green;
+                Step2Color = (Color)Orange;
+                Step3Color = (Color)Gray;
 
 
                 SgtButtonText = "Siguiente";
                 ButtonText = "Atras";
-                ButtonColor = Color.Blue;
-                SgtButtonColor = Color.Blue;
+                ButtonColor = (Color)Blue;
+                SgtButtonColor = (Color)Blue;
 
                 IsStackLayout1Visible = false;
                 IsStackLayout2Visible = true;
                 IsStackLayout3Visible = false;
             }
             else  if(Pasos == 3) {
-                Step1Color = Color.LightGreen;
-                Step2Color = Color.LightGreen;
-                Step3Color = Color.Orange;
+                Step1Color = (Color)Green;
+                Step2Color = (Color)Green;
+                Step3Color = (Color)Orange;
                 SgtButtonText = "Completar Registro";
-                SgtButtonColor = Color.Green;
+                SgtButtonColor = (Color)Green;
 
                 IsStackLayout1Visible = false;
                 IsStackLayout2Visible = false;
@@ -214,15 +221,14 @@ namespace CashFlow.ViewModels
             if (Pasos > 1)
             {
                 Pasos--;
-            }
-            if (Pasos == 1)
+            }else if (Pasos == 1)
             {
                 var res = await App.Current.MainPage.DisplayAlert("Advertencia", "Vas a cancelar el registro", "Ok", "Cancelar");
 
                 if (res)
-                {//logic
+                {
                     await NavigationDispatcher.Instance.Navigation.PopModalAsync();
-                } else {//logic
+                } else {
 
                  }
                     

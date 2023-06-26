@@ -6,8 +6,8 @@
             xmlns:local="clr-namespace:CashFlow.Views"
             x:Class="CashFlow.Views.MainMenu"
             android:TabbedPage.ToolbarPlacement="Bottom"
-            BarBackgroundColor="AliceBlue"
-            SelectedTabColor="{StaticResource SecondaryColor}"
+            BarBackgroundColor="#F5F5F5"
+            SelectedTabColor="{StaticResource AccentColor}"
     UnselectedTabColor="Gray"
             >
     <TabbedPage.Children>
@@ -30,7 +30,7 @@
         </local:TranferPage>
 
         <!-- perfil página -->
-        <local:ProfilePage Title="Perfil">
+        <local:ProfilePage Title="Opciones">
             <local:ProfilePage.IconImageSource>
                 <FontImageSource FontFamily="Icons"
                                  Glyph="{StaticResource IconAccount}"

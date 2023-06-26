@@ -31,5 +31,29 @@
     <Color x:Key="WarningColor">#F3905A</Color>
     <Color x:Key="InfoColor">#4F79AB</Color>
     <Color x:Key="AccentColor">#910DC3</Color>
+
+
+    <Color x:Key="LightGreenishBlue">#55EFC4</Color>
+    <Color x:Key="FadedPoster">#81ECEC</Color>
+    <Color x:Key="GreenDarnerTail">#74B9FF</Color>
+    <Color x:Key="ShyMoment">#A29BFE</Color>
+    <Color x:Key="CityLights">#DFE6E9</Color>
+    <Color x:Key="MintLeaf">#00B894</Color>
+    <Color x:Key="RobinsEggBlue">#00CEC9</Color>
+    <Color x:Key="ElectronBlue">#0984E3</Color>
+    <Color x:Key="ExodusFruit">#6C5CE7</Color>
+    <Color x:Key="SoothingBreeze">#B2BEC3</Color>
+    <Color x:Key="SourLemon">#FFEAA7</Color>
+    <Color x:Key="FirstDate">#FAB1A0</Color>
+    <Color x:Key="PinkGlamour">#FF7675</Color>
+    <Color x:Key="Pico8Pink">#FD79A8</Color>
+    <Color x:Key="AmericanRiver">#636E72</Color>
+    <Color x:Key="BrightYarrow">#FDCB6E</Color>
+    <Color x:Key="Orageville">#E17055</Color>
+    <Color x:Key="ChiGong">#D63031</Color>
+    <Color x:Key="PrunusAvium">#E84393</Color>
+    <Color x:Key="DraculaOrchid">#2D3436</Color>
+
+    <Color x:Key="White">#F5F5F5</Color>
     
 </ResourceDictionary>

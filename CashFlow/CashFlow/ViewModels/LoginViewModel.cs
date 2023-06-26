@@ -43,7 +43,7 @@ namespace CashFlow.ViewModels
         {
             this.Navigation = navigation;
             PasswordIcon = eyeOff;
-            IsPassword = false;
+            IsPassword = true;
             TogglePasswordCommand = new Command(TogglePassword);
             LoginCommand = new Command(OnLoginClicked);
             NewAccountCommand = new Command(OnNewAccountBtnClicked);

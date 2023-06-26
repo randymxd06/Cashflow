@@ -77,3 +77,16 @@ C:\Users\Dj_va\OneDrive\Escritorio\xamarin\Pruebae\Pruebae\Pruebae.iOS\obj\iPhon
 C:\Users\Dj_va\OneDrive\Escritorio\xamarin\Pruebae\Pruebae\Pruebae.iOS\obj\iPhone\Debug\optimized\
 C:\Users\Dj_va\OneDrive\Escritorio\xamarin\Pruebae\Pruebae\Pruebae.iOS\obj\iPhone\Debug\CashFlow.iOS.csproj.AssemblyReference.cache
 C:\Users\Dj_va\OneDrive\Escritorio\xamarin\Pruebae\Pruebae\Pruebae.iOS\obj\iPhone\Debug\CashFlow.iOS.csproj.CoreCompileInputs.cache
+C:\Users\vjt25\Desktop\universidad\dispositivos moviles\git\CashFlow\CashFlow\CashFlow.iOS\obj\iPhone\Debug\actool\_PartialAppManifest.items
+C:\Users\vjt25\Desktop\universidad\dispositivos moviles\git\CashFlow\CashFlow\CashFlow.iOS\obj\iPhone\Debug\actool\_BundleResourceWithLogicalName.items
+C:\Users\vjt25\Desktop\universidad\dispositivos moviles\git\CashFlow\CashFlow\CashFlow.iOS\obj\iPhone\Debug\actool\_ProcessedImageAssetsPath.items
+C:\Users\vjt25\Desktop\universidad\dispositivos moviles\git\CashFlow\CashFlow\CashFlow.iOS\obj\iPhone\Debug\ibtool\_BundleResourceWithLogicalName.items
+C:\Users\vjt25\Desktop\universidad\dispositivos moviles\git\CashFlow\CashFlow\CashFlow.iOS\obj\iPhone\Debug\ibtool\_ProcessedInterfaceDefinitionsPath.items
+C:\Users\vjt25\Desktop\universidad\dispositivos moviles\git\CashFlow\CashFlow\CashFlow.iOS\obj\iPhone\Debug\coremlc\_PartialAppManifest.items
+C:\Users\vjt25\Desktop\universidad\dispositivos moviles\git\CashFlow\CashFlow\CashFlow.iOS\obj\iPhone\Debug\coremlc\_BundleResourceWithLogicalName.items
+C:\Users\vjt25\Desktop\universidad\dispositivos moviles\git\CashFlow\CashFlow\CashFlow.iOS\obj\iPhone\Debug\coremlc\_ProcessedCoreMLModelsPath.items
+C:\Users\vjt25\Desktop\universidad\dispositivos moviles\git\CashFlow\CashFlow\CashFlow.iOS\obj\iPhone\Debug\_ProcessedBundleResourcesPath.items
+C:\Users\vjt25\Desktop\universidad\dispositivos moviles\git\CashFlow\CashFlow\CashFlow.iOS\obj\iPhone\Debug\_ProcessedContentPath.items
+C:\Users\vjt25\Desktop\universidad\dispositivos moviles\git\CashFlow\CashFlow\CashFlow.iOS\obj\iPhone\Debug\optimized\
+C:\Users\vjt25\Desktop\universidad\dispositivos moviles\git\CashFlow\CashFlow\CashFlow.iOS\obj\iPhone\Debug\CashFlow.iOS.csproj.AssemblyReference.cache
+C:\Users\vjt25\Desktop\universidad\dispositivos moviles\git\CashFlow\CashFlow\CashFlow.iOS\obj\iPhone\Debug\CashFlow.iOS.csproj.CoreCompileInputs.cache

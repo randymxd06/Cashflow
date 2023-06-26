@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xct:Popup xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             x:Class="CashFlow.DesignTemplates.InfoPopup"
+           
+           Size="300,300"
+           Visual="Material">
+
+    
+    <StackLayout Orientation="Vertical">
+        <StackLayout x:Name="layoutInfo" Orientation="Vertical" BackgroundColor="{StaticResource MintLeaf}" HeightRequest="160" Padding="10">
+            <Label 
+                  x:Name="icono_success"
+                    Text="{StaticResource IconCheckCircle}"
+                   FontSize="68"
+                   FontFamily="Icons"
+                   TextColor="{StaticResource White}"
+                HorizontalOptions="CenterAndExpand"/>
+            <Label 
+                  x:Name="icono_warning"
+                    Text="{StaticResource IconAlert}"
+                   FontSize="68"
+                   FontFamily="Icons"
+                   TextColor="{StaticResource White}"
+                HorizontalOptions="CenterAndExpand"/>
+            <Label 
+                  x:Name="icono_error"
+                    Text="{StaticResource IconCloseCircle}"
+                   FontSize="68"
+                   FontFamily="Icons"
+                   TextColor="{StaticResource White}"
+                HorizontalOptions="CenterAndExpand"/>
+            <Label  x:Name="titulo"
+                    Text="Conseguido"
+                   FontSize="24"
+                   TextColor="{StaticResource White}"
+                HorizontalOptions="CenterAndExpand"/>
+        </StackLayout>
+        <Label x:Name="mensaje"
+                Padding="20"
+                    Margin="0,10,0,0"
+                    Text="El registro se ha realizado con exito. Puede continuar."
+                   FontSize="16"
+                   TextColor="{StaticResource AmericanRiver}"
+                HorizontalOptions="CenterAndExpand"/>
+        <StackLayout Orientation="Horizontal" VerticalOptions="EndAndExpand" 
+                Margin="40,10,40,100">
+            <Button 
+                x:Name="btnCancel"
+                Text="Cancelar"
+                TextColor="{StaticResource White}"
+                 BackgroundColor="{StaticResource Orageville}"
+                CornerRadius="20"
+                HorizontalOptions="FillAndExpand"
+                />
+            <Button 
+                x:Name="btnOk"
+                Text="Continuar"
+                TextColor="{StaticResource White}"
+                 BackgroundColor="{StaticResource MintLeaf}"
+                CornerRadius="20"
+                 HorizontalOptions="FillAndExpand"
+                />
+        </StackLayout>
+        
+    </StackLayout>
+</xct:Popup>

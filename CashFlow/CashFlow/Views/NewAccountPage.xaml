@@ -28,9 +28,10 @@
             <BoxView Grid.RowSpan="3">
                 <BoxView.Background>
                     <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
-                        <GradientStop Color="{StaticResource SecondaryColor}" Offset="0" />
-                        <GradientStop Color="{StaticResource AccentColor}" Offset="0.30" />
-                        <GradientStop Color="#F5F5F5" Offset="0.8" />
+                        <GradientStop Color="{StaticResource ElectronBlue}" Offset="0" />
+                        <GradientStop Color="{StaticResource ExodusFruit}" Offset="0.1" />
+                        <GradientStop Color="{StaticResource AccentColor}" Offset="0.2" />
+                        <GradientStop Color="{StaticResource White}" Offset="0.4" />
                     </LinearGradientBrush>
                 </BoxView.Background>
             </BoxView>
@@ -43,16 +44,16 @@
 
 
             <Frame x:Name="loginFrame"
-                   Grid.Row="1"
+                    Grid.Row="1"
 
-                   BackgroundColor="#F5F5F5"
+                   BackgroundColor="{StaticResource White}"
                    CornerRadius="25"
                    BorderColor="Transparent"
                    HasShadow="False"
                    Margin="0,0,0,0"
                    >
 
-                <StackLayout VerticalOptions="Start" HeightRequest="500" >
+                <StackLayout VerticalOptions="FillAndExpand" >
                     <StackLayout Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center">
                         <!-- Stepper -->
                         <Grid Margin="0,0,0,0"
@@ -335,14 +336,13 @@
                     </Grid>
 
 
-
-
+                    
 
                 </StackLayout>
             </Frame>
-            <RelativeLayout IsVisible="true" Grid.Row="2" Background="#F5F5F5" VerticalOptions="FillAndExpand" HorizontalOptions="Center">
+            <RelativeLayout IsVisible="true" Grid.Row="2" BackgroundColor="Transparent" VerticalOptions="FillAndExpand" HorizontalOptions="Center">
                 <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand"
-                             Background="#F5F5F5"
+                             BackgroundColor="Transparent"
                              
                              RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent,
                                                               Property=Width,
@@ -364,7 +364,7 @@
                     BackgroundColor="{Binding ButtonColor}"
                     Command="{Binding DecreasePasosCommand}"
                                              >
-                        
+
                     </Button>
                     <Button x:Name="siguiente_btn"
                             Text="{Binding SgtButtonText}"
@@ -378,12 +378,13 @@
                         HorizontalOptions="FillAndExpand"
                             Command="{Binding IncreasePasosCommand}"
                                              >
-                        
+
                     </Button>
                 </StackLayout>
 
             </RelativeLayout>
- 
+
+
         </Grid>
 
         

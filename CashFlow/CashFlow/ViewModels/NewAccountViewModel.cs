@@ -1,9 +1,11 @@
-﻿using CashFlow.Resources.Styles;
+﻿using CashFlow.DesignTemplates;
+using CashFlow.Resources.Styles;
 using CashFlow.Utils;
 using CashFlow.Views;
 using System;
 using System.Diagnostics;
 using System.Windows.Input;
+using Xamarin.CommunityToolkit.Extensions;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -210,10 +212,23 @@ namespace CashFlow.ViewModels
             if (Pasos < 3)
             {
                 Pasos++;
+            }else if (Pasos == 3)
+            {
+
+                NavigationDispatcher.Instance.Navigation.ShowPopup(new InfoPopup("success", "Conseguido", "El registro se ha realizado con exito. Puede continuar.",
+                          okAction: () => {
+                              /* Acción para el botón continuat */
+
+                          },
+                        cancelAction: () => { /* Acción para el botón Cancelar */ })
+                {
+
+                });
+
             }
         }
 
-        private async void DecreasePasos()
+        private  void DecreasePasos()
         {
 
 
@@ -223,14 +238,15 @@ namespace CashFlow.ViewModels
                 Pasos--;
             }else if (Pasos == 1)
             {
-                var res = await App.Current.MainPage.DisplayAlert("Advertencia", "Vas a cancelar el registro", "Ok", "Cancelar");
-
-                if (res)
-                {
-                    await NavigationDispatcher.Instance.Navigation.PopModalAsync();
-                } else {
-
-                 }
+                 NavigationDispatcher.Instance.Navigation.ShowPopup(new InfoPopup("warning","Advertencia","Si cancelas el registro se borraran los datos actuales.",
+                      okAction: () => {
+                          NavigationDispatcher.Instance.Navigation.PopModalAsync();
+                     },
+                    cancelAction: () => { /* Acción para el botón Cancelar */ })
+                 {
+                    
+                 });
+                
                     
             }
         }

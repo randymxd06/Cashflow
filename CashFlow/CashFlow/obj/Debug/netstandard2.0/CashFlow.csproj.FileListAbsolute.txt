@@ -87,3 +87,4 @@ C:\Users\vjt25\Desktop\universidad\dispositivos moviles\git\CashFlow\CashFlow\Ca
 C:\Users\vjt25\Desktop\universidad\dispositivos moviles\git\CashFlow\CashFlow\CashFlow\bin\Debug\netstandard2.0\CashFlow.pdb
 C:\Users\vjt25\Desktop\universidad\dispositivos moviles\git\CashFlow\CashFlow\CashFlow\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\vjt25\Desktop\universidad\dispositivos moviles\git\CashFlow\CashFlow\CashFlow\obj\Debug\netstandard2.0\Views\ProductPage.xaml.g.cs
+C:\Users\vjt25\Desktop\universidad\dispositivos moviles\git\CashFlow\CashFlow\CashFlow\obj\Debug\netstandard2.0\DesignTemplates\InfoPopup.xaml.g.cs

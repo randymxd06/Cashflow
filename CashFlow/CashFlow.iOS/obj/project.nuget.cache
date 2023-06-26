@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "A3G97436lT9KY0KRQEut6zCDo+baruACE++ZbQ+jTVhQnBlplQncfuEvFuka7EDxUsXIEp0dyW3QIfwoZG+/uw==",
+  "dgSpecHash": "p+KcXzqqz8B5nLjDB5QbtU3b8MD8HUPq/FhVNSn7Y0kAaBHKa6Bg+hwt13mvej2JaESbV5XkmlH5bIoGUvu/4w==",
   "success": true,
   "projectFilePath": "C:\\Users\\vjt25\\Desktop\\universidad\\dispositivos moviles\\git\\CashFlow\\CashFlow\\CashFlow.iOS\\CashFlow.iOS.csproj",
   "expectedPackageFiles": [
@@ -11,6 +11,7 @@
     "C:\\Users\\vjt25\\.nuget\\packages\\skiasharp.views.forms\\2.80.2\\skiasharp.views.forms.2.80.2.nupkg.sha512",
     "C:\\Users\\vjt25\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\vjt25\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512",
+    "C:\\Users\\vjt25\\.nuget\\packages\\xamarin.communitytoolkit\\2.0.6\\xamarin.communitytoolkit.2.0.6.nupkg.sha512",
     "C:\\Users\\vjt25\\.nuget\\packages\\xamarin.essentials\\1.7.6\\xamarin.essentials.1.7.6.nupkg.sha512",
     "C:\\Users\\vjt25\\.nuget\\packages\\xamarin.forms\\5.0.0.2578\\xamarin.forms.5.0.0.2578.nupkg.sha512",
     "C:\\Users\\vjt25\\.nuget\\packages\\xamarin.forms.visual.material\\5.0.0.2578\\xamarin.forms.visual.material.5.0.0.2578.nupkg.sha512",
